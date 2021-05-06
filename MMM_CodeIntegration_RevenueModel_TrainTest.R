@@ -1,6 +1,6 @@
-#######################################################################################
-############################## MMM - Revenue Model ##############################
-#######################################################################################
+#############################################################################################################
+############################## MMM - Revenue Model , Author - Harshal H. Parkhe##############################
+#############################################################################################################
 
 rm(list = ls())
 library(readr)
@@ -18,7 +18,7 @@ library(gtools)
 
 #Load the data
 
-Raw_Modeling_data <- read_csv("D:\\Dropbox (eClerx Services Ltd.)\\Harshal Parkhe\\Documents\\Hilton\\Abhishek_Final\\MarketMix\\input\\Modeling_data.csv", 
+Raw_Modeling_data <- read_csv("D:\\MarketMix\\input\\Modeling_data.csv", 
                               col_types = cols(Week_end = col_date(format = "%d-%m-%Y")))
 
 sapply(Raw_Modeling_data, function(x) sum(is.na(x)))
